@@ -1,0 +1,31 @@
+git commond 
+1.git init 初始化当前目录，这个目录变成Git可以管理的仓库
+2.git config --global username "xxx"设置git用户名
+3.git status 查看当前git状态，命令可以让我们时刻掌握仓库当前的状态，
+4.git add . 把当前目录的所有新文件添加到stage暂存目录中
+5.git add readme.txt 表示把单个文件：readme.txt添加到stage暂存目录中
+6.git commit -m "本次提交的说明" 将stage中的文件提交到respo仓库中
+7.git log 查看git操作的log历史
+8.git reflog 查看更详细的log历史
+9.git diff <文件名> 查看被修改文件和仓库中的不同
+10.git branch -a 查看当前拷贝下来的repository中所有分支的情况，还有当前指向哪分支
+11.git branch 显示当前指向本地哪个分支
+12.git checkout 切分支的意思
+13.git checkout <分支名 >命令用于切换分支或恢复工作树文件 
+14.git fetch <远程主机名> <分支名> -- 如git fetch origin development取回origin主机的development分支
+14.git fetch origin -- 命令从远程refs/heads/	命名空间复制所有分支，并将它们存储到本地的refs/remotes/ origin/命名空间中
+15.git pull 取回远程主机某个分支的更新，再与本地的指定分支合并，它的完整格式稍稍有点复杂
+16.git pull <远程主机名> <远程分支名>:<本地分支名> 拉取远程分支内容并更新
+17.git push <远程主机名> <本地分支名>:<远程分支名> 将本地repository中内容推向远程主机对应分支中
+注意：git push origin :dev会远程主机中dev分支内容全部删除。
+18.git remote -v 列出所有远程主机如origin
+19.git reset --hard <commitId> Git允许我们在版本的历史之间穿梭 ，git reset还可以回退版本
+19.git reset HEAD <file> 将file暂存区的修改回退到工作区
+20..git 目录是git的版本库
+21.stage是暂存区、master是创建时候的第一个分支、HEAD是表示当前指向是哪个分支
+22.git checkout -- <file> 将file恢复到，最近一次git add 或者git commit时候的状态
+注意：git checkout -- file命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令
+23.git add remote origin git@github.com:dart74/learngit 是把本地的git项目和远端的关联起来，
+添加后远端的库就叫origin
+24.git push  -u origin master :是把本地库内容推送到远程，把本地master分支推送到origin，
+加-u是把本地master 和 origin远端master关联起来
