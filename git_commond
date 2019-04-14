@@ -29,3 +29,4 @@ git commond
 添加后远端的库就叫origin
 24.git push  -u origin master :是把本地库内容推送到远程，把本地master分支推送到origin，
 加-u是把本地master 和 origin远端master关联起来
+25.git clone <远端的链接>
